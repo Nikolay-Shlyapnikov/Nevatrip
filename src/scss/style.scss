@@ -1,0 +1,39 @@
+$gray: #9B9B9B;
+$white: #FFF;
+$black: #000;
+* {
+    font-family: Roboto;
+}
+
+.title {
+    font-family: Roboto;
+    text-align: center;
+}
+
+.main-text {
+    span {
+        font-weight: 600;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 550;
+        text-align: center;
+    }
+    margin: 15px 0;
+    font-family: Roboto;
+}
+
+.task {
+    padding: 50px 0;
+}
+
+.d-none {
+    display: none;
+}
+
+@import "task2.scss";
+@import "table.scss";
+@import "select.scss";
+@import "cart.scss";
+@import "adaptive.scss";
+@import "null.scss";

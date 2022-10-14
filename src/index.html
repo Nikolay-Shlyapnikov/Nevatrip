@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title": "Nevatrip" })
+
+<body>
+    <main class="main">
+
+        <div class="container">
+            <h1 class="title">Часть 2</h1>
+            <h2 class="title">Задание 1. Вёрстка блока</h2>
+            <div class="task __1">
+                <div class="cart__wrapper">
+                    <div class="cart">
+                        <div class="cart__photo first">
+                            <div class="cart__photo-button yellow-black">НОВИНКА</div>
+                        </div>
+                        <div class="cart__info">
+                            <p class="cart__time-mobile cart__time"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 0C3.5888 0 0 3.5888 0 8C0 12.4112 3.5888 16 8 16C12.4112 16 16 12.4112 16 8C16 3.5888 12.4112 0 8 0ZM8 14.2977C4.52746 14.2977 1.7021 11.4727 1.7021 8C1.7021 4.5273 4.52746 1.70226 8 1.70226C11.4725 1.70226 14.2979 4.5273 14.2979 8C14.2979 11.4727 11.4725 14.2977 8 14.2977Z" fill="#C7C7C7"/>
+                                <path d="M12.1693 7.75296H8.57407V3.43019C8.57407 3.06642 8.27913 2.77148 7.91536 2.77148C7.55159 2.77148 7.25665 3.06642 7.25665 3.43019V8.41167C7.25665 8.77544 7.55159 9.07037 7.91536 9.07037H12.1693C12.5331 9.07037 12.828 8.77544 12.828 8.41167C12.828 8.04789 12.5331 7.75296 12.1693 7.75296Z" fill="#C7C7C7"/>
+                                </svg> 2 часа</p>
+                            <h2 class="cart__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2019</h2>
+                            <p class="cart__time-desctop cart__time"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 0C3.5888 0 0 3.5888 0 8C0 12.4112 3.5888 16 8 16C12.4112 16 16 12.4112 16 8C16 3.5888 12.4112 0 8 0ZM8 14.2977C4.52746 14.2977 1.7021 11.4727 1.7021 8C1.7021 4.5273 4.52746 1.70226 8 1.70226C11.4725 1.70226 14.2979 4.5273 14.2979 8C14.2979 11.4727 11.4725 14.2977 8 14.2977Z" fill="#C7C7C7"/>
+                                <path d="M12.1693 7.75296H8.57407V3.43019C8.57407 3.06642 8.27913 2.77148 7.91536 2.77148C7.55159 2.77148 7.25665 3.06642 7.25665 3.43019V8.41167C7.25665 8.77544 7.55159 9.07037 7.91536 9.07037H12.1693C12.5331 9.07037 12.828 8.77544 12.828 8.41167C12.828 8.04789 12.5331 7.75296 12.1693 7.75296Z" fill="#C7C7C7"/>
+                                </svg> 2 часа</p>
+                            <ul class="cart__list">
+                                <li class="cart__list-item">Билет на целый день</li>
+                                <li class="cart__list-item">Неограниченное число катаний</li>
+                                <li class="cart__list-item">6 остановок у главных достопримечательностей</li>
+                                <li class="cart__list-item time">Ближайший рейс сегодня
+                                    <div class="cart__times">
+                                        <div class="cart__times-item">12:00</div>
+                                        <div class="cart__times-item">12:00</div>
+                                        <div class="cart__times-item">12:00</div>
+                                        <div class="cart__times-item show-more">ещё</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="cart__price-order">
+                                <div class="cart__price">
+                                    <p class="cart__main-price"><span>900</span> &#8381</p>
+                                    <p class="cart__sub-main-price">1200 р. на причале</p>
+                                </div>
+                                <button class="cart__button">Поподробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <div class="cart__photo second">
+                            <div class="cart__photo-button blue-white">НОВИНКА</div>
+                        </div>
+                        <div class="cart__info">
+                            <p class="cart__time-mobile cart__time"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 0C3.5888 0 0 3.5888 0 8C0 12.4112 3.5888 16 8 16C12.4112 16 16 12.4112 16 8C16 3.5888 12.4112 0 8 0ZM8 14.2977C4.52746 14.2977 1.7021 11.4727 1.7021 8C1.7021 4.5273 4.52746 1.70226 8 1.70226C11.4725 1.70226 14.2979 4.5273 14.2979 8C14.2979 11.4727 11.4725 14.2977 8 14.2977Z" fill="#C7C7C7"/>
+                                <path d="M12.1693 7.75296H8.57407V3.43019C8.57407 3.06642 8.27913 2.77148 7.91536 2.77148C7.55159 2.77148 7.25665 3.06642 7.25665 3.43019V8.41167C7.25665 8.77544 7.55159 9.07037 7.91536 9.07037H12.1693C12.5331 9.07037 12.828 8.77544 12.828 8.41167C12.828 8.04789 12.5331 7.75296 12.1693 7.75296Z" fill="#C7C7C7"/>
+                                </svg> 2 часа</p>
+                            <h2 class="cart__title">АКЦИЯ - Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2019</h2>
+                            <p class="cart__time-desctop cart__time"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 0C3.5888 0 0 3.5888 0 8C0 12.4112 3.5888 16 8 16C12.4112 16 16 12.4112 16 8C16 3.5888 12.4112 0 8 0ZM8 14.2977C4.52746 14.2977 1.7021 11.4727 1.7021 8C1.7021 4.5273 4.52746 1.70226 8 1.70226C11.4725 1.70226 14.2979 4.5273 14.2979 8C14.2979 11.4727 11.4725 14.2977 8 14.2977Z" fill="#C7C7C7"/>
+                                <path d="M12.1693 7.75296H8.57407V3.43019C8.57407 3.06642 8.27913 2.77148 7.91536 2.77148C7.55159 2.77148 7.25665 3.06642 7.25665 3.43019V8.41167C7.25665 8.77544 7.55159 9.07037 7.91536 9.07037H12.1693C12.5331 9.07037 12.828 8.77544 12.828 8.41167C12.828 8.04789 12.5331 7.75296 12.1693 7.75296Z" fill="#C7C7C7"/>
+                                </svg> 2 часа</p>
+                            <ul class="cart__list">
+                                <li class="cart__list-item">Билет на целый день</li>
+                                <li class="cart__list-item">Неограниченное число катаний</li>
+                                <li class="cart__list-item">6 остановок у главных достопримечательностей</li>
+                                <li class="cart__list-item time">Ближайший рейс сегодня
+                                    <div class="cart__times">
+                                        <div class="cart__times-item">12:00</div>
+                                        <div class="cart__times-item">12:00</div>
+                                        <div class="cart__times-item">12:00</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="cart__price-order">
+                                <div class="cart__price">
+                                    <p class="cart__main-price"><span>900</span> &#8381</p>
+                                </div>
+                                <button class="cart__button">Поподробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">Задание 2. Таблица на странице</h2>
+            <div class="task __2">
+                <p class="main-text">Самый простой способ убрать полосу горизонтальной прокрутки у всей страницы - обернуть таблицу в элемент со свойством overflow-x:auto</p>
+                <div class="task2-wrapper">
+                    <div class="blog">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+                            eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+                            vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                        </p>
+                        <div class="table-wrapper">
+                            <table border="1" style="border-collapse: collapse; width: 100%; height: 1004px;">
+                                <tbody>
+                                    <tr style="height: 36px;">
+                                        <td style="width: 25%; height: 36px; border-style: solid; text-align: center;"><span style="font-weight: 400;">But I must explain to you how all this mistaken</span></td>
+                                        <td style="width: 25%; height: 36px; border-style: solid;">
+                                            <p><span style="font-weight: 400;"></span></p>
+                                            <p style="text-align: center;"><span style="font-weight: 400;">But I must explain to you how all</span></p>
+                                            <p><span style="font-weight: 400;"></span></p>
+                                        </td>
+                                        <td style="width: 25%; height: 36px; border-style: solid; text-align: center;"><span style="font-weight: 400;">But I must explain to you how all this</span></td>
+                                        <td style="width: 82.8017176331783%; height: 36px; border-style: solid; text-align: center;">
+                                            <p><span style="font-weight: 400;"></span></p>
+                                            <p><span style="font-weight: 400;">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain</span></p>
+                                            <p><span style="font-weight: 400;"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 18px;">
+                                        <td style="width: 25%; height: 18px; border-style: solid; text-align: center;"><span style="font-weight: 400;">But I must explain  </span></td>
+                                        <td style="width: 25%; height: 18px; border-style: solid;">
+                                            <p><span style="font-weight: 400;"></span></p>
+                                            <p style="text-align: center;"><span style="font-weight: 400;">Sed ut perspiciatis unde omnis iste natus</span></p>
+                                            <p><span style="font-weight: 400;"></span></p>
+                                        </td>
+                                        <td style="width: 25%; height: 18px; border-style: solid; text-align: center;"><span style="font-weight: 400;">Sed ut perspiciatis</span></td>
+                                        <td style="width: 82.8017176331783%; height: 18px; border-style: solid; text-align: center;">
+                                            <p><span style="font-weight: 400;"></span></p>
+                                            <p><span style="font-weight: 400;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</span></p>
+                                            <p><span style="font-weight: 400;"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 54px;">
+                                        <td style="width: 25%; border-style: solid; height: 54px; text-align: center;"><span style="font-weight: 400;">Ut enim ad minima veniam</span></td>
+                                        <td style="width: 25%; border-style: solid; height: 54px;">
+                                            <p><span style="font-weight: 400;"></span></p>
+                                            <p style="text-align: center;"><span style="font-weight: 400;">Ut enim ad minima veniam, quis nostrum</span></p>
+                                            <p><span style="font-weight: 400;"></span></p>
+                                        </td>
+                                        <td style="width: 25%; border-style: solid; height: 54px; text-align: center;"><span style="font-weight: 400;">Ut enim</span></td>
+                                        <td style="width: 82.8017176331783%; border-style: solid; height: 54px; text-align: center;">
+                                            <p><span style="font-weight: 400;"></span></p>
+                                            <p><span style="font-weight: 400;">Ut enim ad minima veniam, quis nostrum exercitationem ullam</span><span style="font-weight: 400;"></span></p>
+                                            <p><span style="font-weight: 400;"></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 72px;">
+                                        <td style="width: 25%; border-style: solid; height: 72px; text-align: center;"><span style="font-weight: 400;">Quis autem vel eum iure reprehenderit</span></td>
+                                        <td style="width: 25%; border-style: solid; height: 72px;">
+                                            <p><span style="font-weight: 400;"></span></p>
+                                            <p style="text-align: center;"><span style="font-weight: 400;">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil</span></p>
+                                            <p><span style="font-weight: 400;"></span></p>
+                                        </td>
+                                        <td style="width: 25%; border-style: solid; height: 72px; text-align: center;"><span style="font-weight: 400;">Quis autem vel</span></td>
+                                        <td style="width: 82.8017176331783%; border-style: solid; height: 72px; text-align: center;"><span style="font-weight: 400;">Quis autem vel eum iure reprehenderit qui in ea voluptate velit</span></td>
+                                    </tr>
+                                    <tr style="height: 54px;">
+                                        <td style="width: 25%; border-style: solid; height: 54px; text-align: center;"><span style="font-weight: 400;">Quis autem vel eum iure</span></td>
+                                        <td style="width: 25%; border-style: solid; height: 54px;">
+                                            <p><span style="font-weight: 400;"></span></p>
+                                            <p style="text-align: center;"><span style="font-weight: 400;">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil</span></p>
+                                            <p><span style="font-weight: 400;"></span></p>
+                                        </td>
+                                        <td style="width: 25%; border-style: solid; height: 54px; text-align: center;"><span style="font-weight: 400;">Quis autem vel</span></td>
+                                        <td style="width: 82.8017176331783%; border-style: solid; height: 54px; text-align: center;"><span style="font-weight: 400;">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+                            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                            Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are
+                            bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In
+                            a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the
+                            claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects
+                            pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title">Часть 3</h1>
+            <div class="task __1">
+                <h2 class="title">Задание 1. Билеты на событие</h2>
+                <p class="main-text">Изначальная таблица имеет следующий вид:</p>
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead class="table__title">
+                            <tr class="table__row">
+                                <th class="table__cell">id</th>
+                                <th class="table__cell">event_id</th>
+                                <th class="table__cell">event_date</th>
+                                <th class="table__cell">ticket_adult_price</th>
+                                <th class="table__cell">ticket_adult_quantity</th>
+                                <th class="table__cell">ticket_kid_price</th>
+                                <th class="table__cell">ticket_kid_quantity</th>
+                                <th class="table__cell">barcode</th>
+                                <th class="table__cell">user_id</th>
+                                <th class="table__cell">equal_price</th>
+                                <th class="table__cell">created</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+                            <tr class="table__row">
+                                <td class="table__cell">1</td>
+                                <td class="table__cell">003</td>
+                                <td class="table__cell">2021-08-21 13:00:00</td>
+                                <td class="table__cell">700</td>
+                                <td class="table__cell">1</td>
+                                <td class="table__cell">450</td>
+                                <td class="table__cell">0</td>
+                                <td class="table__cell">11111111</td>
+                                <td class="table__cell">00451</td>
+                                <td class="table__cell">700</td>
+                                <td class="table__cell">2021-01-11 13:22:09</td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">2</td>
+                                <td class="table__cell">006</td>
+                                <td class="table__cell">2021-07-29 18:00:00</td>
+                                <td class="table__cell">1000</td>
+                                <td class="table__cell">0</td>
+                                <td class="table__cell">800</td>
+                                <td class="table__cell">2</td>
+                                <td class="table__cell">22222222</td>
+                                <td class="table__cell">00364</td>
+                                <td class="table__cell">1600</td>
+                                <td class="table__cell">2021-01-12 16:62:08</td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">3</td>
+                                <td class="table__cell">003</td>
+                                <td class="table__cell">2021-08-15 17:00:00</td>
+                                <td class="table__cell">700</td>
+                                <td class="table__cell">4</td>
+                                <td class="table__cell">450</td>
+                                <td class="table__cell">3</td>
+                                <td class="table__cell">33333333</td>
+                                <td class="table__cell">00015</td>
+                                <td class="table__cell">4150</td>
+                                <td class="table__cell">2021-01-13 10:08:45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="main-text">
+                    <p class="main-text__title">1 часть задания.</p><br> Для решения этой задачи необходимо выделить в отдельную таблицу билеты и их типы, а также создать таблицу, связывающую заказ и билеты</p>
+                <div class="table__wrapper">
+                    <div class="table__block">
+                        <p class="main-text"><span>Таблица с заказами</span><br>Здесь были убраны поля, отвечающие за количество и за тип билетов</p>
+                        <div class="table-wrapper">
+                            <table class="table">
+                                <thead class="table__title">
+                                    <tr class="table__row">
+                                        <th class="table__cell">id</th>
+                                        <th class="table__cell">event_id</th>
+                                        <th class="table__cell">event_date</th>
+                                        <th class="table__cell">barcode</th>
+                                        <th class="table__cell">user_id</th>
+                                        <th class="table__cell">equal_price</th>
+                                        <th class="table__cell">created</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">003</td>
+
+                                        <td class="table__cell">2021-08-21 13:00:00</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">00451</td>
+                                        <td class="table__cell">3500</td>
+                                        <td class="table__cell">2021-01-11 13:22:09</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">006</td>
+
+                                        <td class="table__cell">2021-07-29 18:00:00</td>
+                                        <td class="table__cell">22222222</td>
+                                        <td class="table__cell">00364</td>
+                                        <td class="table__cell">400</td>
+                                        <td class="table__cell">2021-01-12 16:62:08</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">3</td>
+                                        <td class="table__cell">003</td>
+
+                                        <td class="table__cell">2021-08-15 17:00:00</td>
+                                        <td class="table__cell">33333333</td>
+                                        <td class="table__cell">00015</td>
+                                        <td class="table__cell">4150</td>
+                                        <td class="table__cell">2021-01-13 10:08:45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="table__block">
+                        <p class="main-text"><span>Таблица с билетами</span><br>Содержит в себе следующие поля: инкрементальный порядковый номер, уникальный идентификатор билета, его название и стоимость
+                        </p>
+                        <div class="table-wrapper">
+                            <table class="table">
+                                <thead class="table__title">
+                                    <tr class="table__row">
+                                        <th class="table__cell">id</th>
+                                        <th class="table__cell">ticket_id</th>
+                                        <th class="table__cell">ticket_name</th>
+                                        <th class="table__cell">ticket_price</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">Детский</td>
+                                        <td class="table__cell">450</td>
+
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">Взрослый</td>
+                                        <td class="table__cell">700</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">3</td>
+                                        <td class="table__cell">3</td>
+                                        <td class="table__cell">Льготный</td>
+                                        <td class="table__cell">200</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">4</td>
+                                        <td class="table__cell">4</td>
+                                        <td class="table__cell">Групповой</td>
+                                        <td class="table__cell">1000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="table__wrapper">
+                    <div class="table__block">
+                        <p class="main-text"><span>Связующая таблица</span><br> Уникальные идентификаторы берутся из таблиц заказа и билетов, в качестве уникального значения из таблицы заказов используется barcode. Идентификаторы из других таблиц могут повторяться, если в
+                            одном заказе несколько билетов разных типов, также здесь указывается количество билетов каждого типа в определенном заказе
+                        </p>
+                        <div class="table-wrapper">
+                            <table class="table">
+                                <thead class="table__title">
+                                    <tr class="table__row">
+                                        <th class="table__cell">id</th>
+                                        <th class="table__cell">barcode</th>
+                                        <th class="table__cell">ticket_id</th>
+                                        <th class="table__cell">ticket_count</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">2</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">4</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">3</td>
+                                        <td class="table__cell">22222222</td>
+                                        <td class="table__cell">3</td>
+                                        <td class="table__cell">2</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">4</td>
+                                        <td class="table__cell">33333333</td>
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="table__block">
+                        <p class="main-text"><span>Вывод</span><br>Таким образом можно добавлять энное количество разных типов билетов, не меняя поля в таблицах. Общая стоимость в заказе складывается из количества разных билетов и цены, а затем выводится в изначальную таблицу.
+                            Также такая структура данных понадобится во второй части задания.
+                        </p>
+                    </div>
+                </div>
+                <p class="main-text">
+                    <p class="main-text__title">2 часть задания.</p><br> Чтобы решить эту задачу, придётся изменить связующую таблицу, а также таблицу заказов. Так как в одном заказе могут быть билеты на разное время одного события, придётся обозначать дату в связующей таблице,
+                    а из таблицы заказов убрать это поле, помимо этого также добавить поле ticket_barcode и убрать количество билетов
+                </p>
+                <div class="table__wrapper">
+                    <div class="table__block end">
+                        <p class="main-text"><span>Обновленная таблица заказов</span><br>Была убрана дата события
+                        </p>
+                        <div class="table-wrapper">
+                            <table class="table">
+                                <thead class="table__title">
+                                    <tr class="table__row">
+                                        <th class="table__cell">id</th>
+                                        <th class="table__cell">event_id</th>
+                                        <th class="table__cell">barcode</th>
+                                        <th class="table__cell">user_id</th>
+                                        <th class="table__cell">equal_price</th>
+                                        <th class="table__cell">created</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">003</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">00451</td>
+                                        <td class="table__cell">3500</td>
+                                        <td class="table__cell">2021-01-11 13:22:09</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">006</td>
+                                        <td class="table__cell">22222222</td>
+                                        <td class="table__cell">00364</td>
+                                        <td class="table__cell">400</td>
+                                        <td class="table__cell">2021-01-12 16:62:08</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">3</td>
+                                        <td class="table__cell">003</td>
+                                        <td class="table__cell">33333333</td>
+                                        <td class="table__cell">00015</td>
+                                        <td class="table__cell">4150</td>
+                                        <td class="table__cell">2021-01-13 10:08:45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="main-text"><span>Вывод</span><br>Таким образом каждый билет имеет свой уникальный barcode, у него может быть своя уникальная дата, его тип и цена выведены в отельную таблицу. Получить общее количество билетов заказа можно с помощью обычного
+                            sql-запроса, с группировкой по barcode заказа, а также отдельно получить количество билетов определенного типа
+                        </p>
+                    </div>
+                    <div class="table__block">
+                        <p class="main-text"><span>Обновлённая связующая таблица</span><br>В новой связующей таблице каждый билет описан отдельно и имеет свой уникальный ticket_barcode
+                        </p>
+                        <div class="table-wrapper">
+                            <table class="table">
+                                <thead class="table__title">
+                                    <tr class="table__row">
+                                        <th class="table__cell">id</th>
+                                        <th class="table__cell">barcode</th>
+                                        <th class="table__cell">ticket_id</th>
+                                        <th class="table__cell">ticket_barcode</th>
+                                        <th class="table__cell">event_date</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__body">
+                                    <tr class="table__row">
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">2021-08-21 13:00:00</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">22222222</td>
+                                        <td class="table__cell">2021-08-21 13:00:00</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">3</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">33333333</td>
+                                        <td class="table__cell">2021-08-21 13:00:00</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">4</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">44444444</td>
+                                        <td class="table__cell">2021-08-21 13:00:00</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">5</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">55555555</td>
+                                        <td class="table__cell">2021-08-21 13:00:00</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">6</td>
+                                        <td class="table__cell">11111111</td>
+                                        <td class="table__cell">2</td>
+                                        <td class="table__cell">66666666</td>
+                                        <td class="table__cell">2021-08-21 13:00:00</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">7</td>
+                                        <td class="table__cell">22222222</td>
+                                        <td class="table__cell">3</td>
+                                        <td class="table__cell">77777777</td>
+                                        <td class="table__cell">2021-01-12 16:62:08</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">8</td>
+                                        <td class="table__cell">22222222</td>
+                                        <td class="table__cell">3</td>
+                                        <td class="table__cell">88888888</td>
+                                        <td class="table__cell">2021-01-12 16:62:08</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">9</td>
+                                        <td class="table__cell">33333333</td>
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">99999999</td>
+                                        <td class="table__cell">2021-01-13 10:08:45</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell">10</td>
+                                        <td class="table__cell">33333333</td>
+                                        <td class="table__cell">1</td>
+                                        <td class="table__cell">10101010</td>
+                                        <td class="table__cell">2021-01-13 10:08:45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task __2">
+                <h2 class="title">Задание 2. Время из А в В</h2>
+                <div class="select__container">
+                    <label for="route">Выберите направление движения:</label>
+                    <select class="select__route select" name="route" id="route">
+                        <option class="choice-route" selected value="fromAtoB" >из A в B</option>
+                        <option class="choice-route"  value="fromBtoA" >из B в A</option>
+                        <option class="choice-route"  value="fromAtoBandBack">из A в B и обратно в А</option>
+                    </select>
+                    <div class="select__time-choice fromAtoB">
+
+                    </div>
+                    <div class="select__time-choice fromBtoA d-none">
+
+                    </div>
+                    <div class="select__time-choice fromAtoBandBack d-none">
+
+                    </div>
+                    <div class="select__wrapper">
+                        <label for="count">Введите количетсво билетов</label>
+                        <input id='count' type="number" value='1' min='1' class="countTickets" placeholder="Количество билетов">
+                    </div>
+                    <button class="button getCount">Посчитать сумму поездки</button>
+                    <div class="resultPrice"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

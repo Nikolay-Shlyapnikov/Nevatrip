@@ -1,0 +1,197 @@
+.cart {
+    border: 0.3px solid #828282;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0 0 0;
+    &__list-item.time {
+        display: flex;
+    }
+    &__times {
+        display: flex;
+        flex-wrap: wrap;
+        &-item {
+            min-width: 72px;
+            text-align: center;
+            background: #C5DCFF;
+            border-radius: 11px;
+            padding: 4px 16px;
+            margin: 5px;
+            transition: all 0.4 ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        &-item:hover {
+            transition: all 0.4 ease;
+            color: #fff;
+            background: #6BA6FF;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    &__time {
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans';
+        font-size: calc(12px + 2*(100vw/1440));
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #9E9E9E;
+        margin: 10px 0;
+        svg {
+            margin: 0 10px 0 0;
+        }
+    }
+    &__info {
+        padding: 14px 20px 20px 20px;
+    }
+    &__photo.first {
+        background: url("../img/mobile-cart.png");
+    }
+    &__photo.second {
+        background: url("../img/mobile-cart.png");
+    }
+    &__photo {
+        background-size: cover;
+        min-height: 220px;
+        position: relative;
+        &-button {
+            padding: 10px 17px;
+            position: absolute;
+            left: 0;
+            top: 40px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: calc(12px + 4*(100vw/1440));
+            line-height: 20px;
+        }
+        &-button.yellow-black {
+            background: #FED74B;
+            color: #3E3E3E;
+        }
+        &-button.blue-white {
+            background: #099CE8;
+            color: #FFF;
+        }
+    }
+    &__list-item {
+        position: relative;
+        padding: 0 0 0 36px;
+        margin: 10px 0 0 0;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: calc(14px + 4*(100vw/1440));
+        line-height: 20px;
+        /* or 143% */
+        color: #4B4B4B;
+    }
+    &__list-item::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background: url(../img/check-mark.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__main-price {
+        font-size: calc(30px + 6*(100vw/1440));
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        span {
+            font-family: 'Open Sans';
+        }
+    }
+    &__title {
+        color: #404040;
+        font-family: 'Open Sans';
+        font-size: calc(14px + 12*(100vw/1440));
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    &__price-order {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 35px 0 0 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__sub-main-price {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: calc(10px + 4*(100vw/1440));
+        line-height: 20px;
+    }
+    &__button {
+        background: #FED74B;
+        border: 0.5px solid #CBA500;
+        border-radius: 20px;
+        padding: 12px 40px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: calc(14px + 4*(100vw/1440));
+        line-height: 20px;
+        /* or 143% */
+        color: #404040;
+    }
+}
+
+@media (min-width: 768px) {
+    .cart {
+        &__time-mobile {
+            display: none;
+        }
+        &__time-desctop {
+            display: block;
+        }
+        &__photo.first {
+            background: url('../img/desctop-cart.png');
+            background-size: cover;
+        }
+        &__photo.second {
+            background: url('../img/desctop-cart1.png');
+            background-size: cover;
+        }
+        &__photo {
+            flex: 0 0 42.68%;
+            min-height: 369px;
+        }
+        &__info {
+            flex: 0 0 57.32%;
+        }
+        &__price-order {
+            justify-content: start;
+        }
+        &__button {
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .cart {
+        &__time-desctop {
+            display: none;
+        }
+        &__time-mobile {
+            display: block;
+        }
+        &__photo {
+            flex: 0 0 100%;
+        }
+        &__info {
+            flex: 0 0 100%;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.select {
+    border: 1px solid teal;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 600px;
+        margin: 20px auto;
+        border: 1px solid teal;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    &__time-choice {
+        align-items: center;
+        margin: 20px 0;
+    }
+    &__wrapper {
+        display: flex;
+        padding: 0px 20px;
+    }
+}
+
+.countTickets {
+    width: 20%;
+    margin: 0 0 0 20px;
+    text-align: center;
+    border: 1px solid teal;
+    display: block;
+}
+
+.getCount {
+    margin: 20px 0;
+    width: 51%;
+    border: 1px solid teal;
+    background: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.4s ease;
+}
+
+.getCount:hover {
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+    background: teal;
+    color: white;
+}

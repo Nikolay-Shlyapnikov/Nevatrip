@@ -1,0 +1,27 @@
+.table {
+    margin: 25px 0 0 0;
+    text-align: center;
+    border: 1px solid teal;
+    &__cell {
+        padding: 5px;
+        border: 1px solid teal;
+    }
+    &__block {
+        .table {
+            width: 100%;
+        }
+    }
+    &__block.end {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__wrapper {
+        >* {
+            flex: 0 0 40%;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
